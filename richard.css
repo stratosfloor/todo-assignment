@@ -38,6 +38,12 @@ div input, div button {
     animation-delay: 1.4s;
 }
 
+small {
+    color:red;
+    font-style: italic;
+    animation: error 0.75s steps(1) infinite;
+}
+
 ul li {
     list-style: none;
     animation: fade-in 1s, move-up 1s;
@@ -94,3 +100,8 @@ ul li {
     }
 }
 
+@keyframes error {
+    50% {
+        visibility: hidden;
+    }
+}
