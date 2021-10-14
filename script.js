@@ -56,7 +56,7 @@ button.addEventListener("click", function () {
     // Lägg till klick på våra todos i listan
     itemLabel.addEventListener("click", function () {
         if (item.getAttribute("class") == "completed") {
-            item.setAttribute("class", "");
+            item.setAttribute("class", "notCompleted");
             completedCount--;
         }
         else {

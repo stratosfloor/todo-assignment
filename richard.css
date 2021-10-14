@@ -41,7 +41,25 @@ div input, div button {
 ul li {
     list-style: none;
     animation: fade-in 1s, move-up 1s;
+}
 
+.notCompleted {
+    text-decoration: none;
+}
+.notCompleted span:nth-child(1){
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.notCompleted span:nth-child(1):hover {
+    text-decoration: line-through;
+}
+
+.completed span:nth-child(1){
+    text-decoration: line-through;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    
 }
 
 @keyframes container-dropdown {
@@ -75,3 +93,4 @@ ul li {
         transform: translate(0,0);
     }
 }
+
