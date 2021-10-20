@@ -38,6 +38,7 @@ div input, div button {
 }
 
 small {
+    display: block;
     color:red;
     font-style: italic;
     animation: error 0.75s steps(1) infinite;
